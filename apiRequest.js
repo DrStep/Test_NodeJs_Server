@@ -38,13 +38,13 @@ function apiRequest(req, response, next) {
         page: 1,
         count: 30
     };
-    //response.jsonp(0);
+    response.jsonp(0);
     Q.nfcall(search, {
         geo_id : 213,
         page: 1,
         count: 30
     }, apiKey, paramStr)
-        /*.then(function(res) {   //90616
+       /* .then(function(res) {   //90616
             console.log(paramStr);
             var pages = Math.ceil(res.models.total/30);
             var page;
