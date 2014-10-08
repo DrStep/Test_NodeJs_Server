@@ -1,0 +1,22 @@
+{
+    "name": "urlvisit-stats",
+    "version": "0.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@bitbucket.org/melchakov/urlvisit-stats.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.5.0",
+        "express": "^4.4.4",
+        "jade": "^1.4.2",
+        "mongodb": "^1.4.7",
+        "newrelic": "^1.7.3"
+    }
+}
