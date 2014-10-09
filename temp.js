@@ -308,7 +308,7 @@ function apiRequest(req, response, next) {
             return lastpromise;
         })
         .then(function() {
-//APIREQUEST VERSION!!!!! LAST ONE!
+//APIREQUEST VERSION!!!!! LAST ONE!оорен тращк (ХЪ)
 
             var idForSearchArray = [90616,91156,994004,278370,91153,1009492,984940,984941,8442711,7766764,91148,90613,90610,90619,90635,
                 90617,90615,1596792,90618,90614,10590810,179660];
