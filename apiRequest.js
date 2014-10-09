@@ -66,7 +66,7 @@ function apiRequest() {
                                                         if (res.searchResult.results[i] && res.searchResult.results[i].offer) {
                                                             if (!_.contains(shopsIdArray, res.searchResult.results[i].offer.shopInfo.id)) {
                                                                 shopsIdArray.push(res.searchResult.results[i].offer.shopInfo.id);
-                                                                fs.appendFileSync('shopsId', res.searchResult.results[i].offer.shopInfo.id);
+                                                                fs.appendFileSync('shopsId', res.searchResult.results[i].offer.shopInfo.id + ",\n");
                                                             }
                                                         }
                                                     }
@@ -95,7 +95,7 @@ function apiRequest() {
                         }, apiKey, 'shop/' + shopId).then(function (res) {
                                 var url = res.shop.url.substr(7);           //delete "http://"
                                 url = url.substring(0, str.indexOf('/'));
-                                fs.appendFileSync('result.csv', url);
+                                fs.appendFileSync('result.csv', '"' + url + '"\n');
                                 return res;
                             });
                     }
