@@ -18,6 +18,7 @@ function search(optionsFunc, apiKey, str, callback) {
 
 function apiRequest() {
     var shopsIdArray = [];
+    var finalArr = [];
     var apiKey = "T9hQjm9W7BjYfWnsfkZZUwxRAKdklO";
     var paramStr = 'category/90616/models';
     var options = {
@@ -95,7 +96,10 @@ function apiRequest() {
                         }, apiKey, 'shop/' + shopId).then(function (res) {
                                 var url = res.shop.url.substr(7);           //delete "http://"
                                 url = url.substring(0, str.indexOf('/'));
-                                fs.appendFileSync('result.csv', '"' + url + '"\n');
+                                if (!_.contains(finalArr, url)) {
+                                    fs.appendFileSync('result.csv', '"' + url + '"\n');
+                                    finalArr.push(url);
+                                }
                                 return res;
                             });
                     }
@@ -103,17 +107,13 @@ function apiRequest() {
             }
             return innerPromise;
         }).catch(function(e) {
-            fs.unlink('result.csv', function (err) {
-                if (err) throw err;
-                console.log('successfully deleted /tmp/hello');
-            });
             apiRequest();
         })
 
 
 
     /*request({
-        url: 'https://api.content.market.yandex.ru/v1/shop/89179.json',
+       url: 'https://api.content.market.yandex.ru/v1/shop/18063.json',
         qs: {
             geo_id : 213,
             page: 1,
@@ -129,8 +129,6 @@ function apiRequest() {
     }, function(err, res, body) {
         console.log(body);
     })*/
-
-
 
 }
 
