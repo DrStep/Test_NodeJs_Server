@@ -21,11 +21,7 @@ function apiRequest() {
     var finalArr = [];
     var apiKey = "T9hQjm9W7BjYfWnsfkZZUwxRAKdklO";
     var paramStr = 'category/90616/models';
-    var options = {
-        geo_id : 213,
-        page: 1,
-        count: 30
-    };
+    var temp = 0;
 
     Q.nfcall(search, {
         geo_id : 213,
@@ -67,7 +63,7 @@ function apiRequest() {
                                                         if (res.searchResult.results[i] && res.searchResult.results[i].offer) {
                                                             if (!_.contains(shopsIdArray, res.searchResult.results[i].offer.shopInfo.id)) {
                                                                 shopsIdArray.push(res.searchResult.results[i].offer.shopInfo.id);
-                                                                fs.appendFileSync('shopsId', res.searchResult.results[i].offer.shopInfo.id + ",\n");
+                                                                fs.appendFileSync('shopsId1', res.searchResult.results[i].offer.shopInfo.id + ",\n");
                                                             }
                                                         }
                                                     }
@@ -86,19 +82,33 @@ function apiRequest() {
         }).then(function() {
             var shopId;
             var innerPromise = Q();
-            console.log("ShopIdArray starts");
-            for (shopId = 0; shopId<shopsIdArray.length; shopId++) {
-                console.log("searchId Loop" + shopId);
+            for (shopId = temp; shopId<shopsIdArray.length; shopId++) {
                 innerPromise = innerPromise.then((function (shopId) {
+                    var realShopId = shopsIdArray[shopId];
                     return function () {
                         return Q.nfcall(search, {
                             geo_id: 213
-                        }, apiKey, 'shop/' + shopId).then(function (res) {
-                                var url = res.shop.url.substr(7);           //delete "http://"
-                                url = url.substring(0, str.indexOf('/'));
+                        }, apiKey, 'shop/' + realShopId).then(function (res) {
+                                console.log(res);
+                                var url;           //delete "http://"
+                                if (res.shop.url) {
+                                    url = res.shop.url;
+                                    if (url.indexOf("http://")) {
+                                        url = res.shop.url.substr(7);
+                                    }
+                                    if (url.substring(0, url.indexOf('/')))
+                                        url = url.substring(0, url.indexOf('/'));
+                                } else if (res.shop.shopName) {
+                                    url = res.shop.shopName;
+                                } else if (res.shop.name) {
+                                    url = res.shop.name;
+                                } else {
+                                    url = "Unknown shop";
+                                }
+                               // fs.appendFileSync('result.csv', '"' + url + '"\n');
                                 if (!_.contains(finalArr, url)) {
-                                    fs.appendFileSync('result.csv', '"' + url + '"\n');
                                     finalArr.push(url);
+                                    fs.appendFileSync('resultTest1.csv', '"' + url + '"\n');
                                 }
                                 return res;
                             });
@@ -106,14 +116,16 @@ function apiRequest() {
                 })(shopId));
             }
             return innerPromise;
-        }).catch(function(e) {
+        })
+        .catch(function(e) {
+            console.log(e);
             apiRequest();
         })
 
 
 
     /*request({
-       url: 'https://api.content.market.yandex.ru/v1/shop/18063.json',
+       url: 'https://api.content.market.yandex.ru/v1/shop/1613.json',
         qs: {
             geo_id : 213,
             page: 1,

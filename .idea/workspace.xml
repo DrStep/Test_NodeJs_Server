@@ -29,7 +29,34 @@
       <file leaf-file-name="apiRequest.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apiRequest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="39" selection-start="4349" selection-end="4349" vertical-scroll-proportion="0.13068181" vertical-offset="1682" max-vertical-offset="2520">
+            <state line="110" column="82" selection-start="5434" selection-end="5434" vertical-scroll-proportion="-0.125" vertical-offset="2024" max-vertical-offset="2736">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resultTest.csv" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resultTest.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="200" column="11" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0" vertical-offset="3942" max-vertical-offset="7452">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopsId" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopsId">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="832" column="3" selection-start="5757" selection-end="5760" vertical-scroll-proportion="0.0" vertical-offset="14865" max-vertical-offset="20412">
               <folding />
             </state>
           </provider>
@@ -38,7 +65,7 @@
       <file leaf-file-name="yandex-api.log" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yandex-api.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3621" column="0" selection-start="631058" selection-end="631058" vertical-scroll-proportion="0.0" vertical-offset="779592" max-vertical-offset="779922">
+            <state line="21280" column="0" selection-start="3678101" selection-end="3678101" vertical-scroll-proportion="0.0" vertical-offset="1097432" max-vertical-offset="1097784">
               <folding />
             </state>
           </provider>
@@ -75,15 +102,6 @@
         <entry file="file://$PROJECT_DIR$/yandex-api-keys.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="43" selection-start="252" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2124">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="468">
               <folding />
             </state>
           </provider>
@@ -131,6 +149,8 @@
         <option value="$PROJECT_DIR$/text.txt" />
         <option value="$PROJECT_DIR$/temp.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/result.csv" />
+        <option value="$PROJECT_DIR$/resultTest.csv" />
         <option value="$PROJECT_DIR$/apiRequest.js" />
       </list>
     </option>
@@ -263,7 +283,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -273,7 +293,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3478261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3478261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -304,20 +324,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yandex-api-keys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="43" selection-start="252" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2124">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/mongo_client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="408" column="0" selection-start="17228" selection-end="17228" vertical-scroll-proportion="0.0" vertical-offset="7223" max-vertical-offset="8766">
@@ -566,20 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="45" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="2430">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yandex-api.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3621" column="0" selection-start="631058" selection-end="631058" vertical-scroll-proportion="0.0" vertical-offset="779592" max-vertical-offset="779922">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yandex-api-keys.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="43" selection-start="252" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="2124">
@@ -601,9 +593,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yandex-api.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21280" column="0" selection-start="3678101" selection-end="3678101" vertical-scroll-proportion="0.0" vertical-offset="1097432" max-vertical-offset="1097784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="45" selection-start="2221" selection-end="2221" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="2430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopsId">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="832" column="3" selection-start="5757" selection-end="5760" vertical-scroll-proportion="0.0" vertical-offset="14865" max-vertical-offset="20412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resultTest.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="200" column="11" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0" vertical-offset="3942" max-vertical-offset="7452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apiRequest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="39" selection-start="4349" selection-end="4349" vertical-scroll-proportion="0.13068181" vertical-offset="1682" max-vertical-offset="2520">
+        <state line="110" column="82" selection-start="5434" selection-end="5434" vertical-scroll-proportion="-0.125" vertical-offset="2024" max-vertical-offset="2736">
           <folding />
         </state>
       </provider>
